@@ -4,23 +4,29 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html, body, .container {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
     user-select: none;
+    background-color: red;
+}
+
+#root, .container {
+  min-height: 100vh;  /* 100% of the viewport height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;  /* useful for app layout */
 }
 
 
 .container {
-  min-height: 100vh; /* Full viewport height */
-  width: 100vw;      /* Full viewport width */
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   max-width: 320px;
-  margin: 30px auto;
+  margin: 0;
+  width: 100vw;
 }
 
 .list-container {
