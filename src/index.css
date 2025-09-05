@@ -4,39 +4,30 @@
   box-sizing: border-box;
 }
 
-html, body, .container {
+html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
     user-select: none;
-    background-color: red;
 }
-
-#root, .container {
-  min-height: 100vh;  /* 100% of the viewport height */
-  width: 100%;
-  display: flex;
-  flex-direction: column;  /* useful for app layout */
-}
-
 
 .container {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  max-width: 320px;
-  margin: 0;
-  width: 100vw;
-}
-
-.list-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 320px;
+  margin: 30px auto;
+}
+
+.list-container {  
   background-color: #abdafc;
   color: #1a1a1a;
   padding-bottom: 20px;
+  /* height: 100%; */
 }
 
 /* Header */
@@ -137,6 +128,8 @@ header {
 /* Pages */
 .stick-family-image {
   width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 h1 {
@@ -144,6 +137,7 @@ h1 {
   text-shadow: 2px 2px 1px #adfc92;
   text-decoration: underline #61d095 2px;
   text-underline-offset: 4px;
+  text-align: center;
   margin: 0;
 }
 
